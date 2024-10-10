@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient[data-v-2e6163a4] {
+    background: linear-gradient(15deg, rgba(255, 255, 255, 0) 9.55%, rgba(255, 255, 255, 0) 30.28%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 41.58%, rgba(255, 255, 255, 0) 59.02%, rgb(255, 255, 255) 67.97%, rgba(255, 255, 255, 0) 74.56%, rgb(255, 255, 255));
+}
+
+.gradient[data-v-73b2ce29] {
+    background-image: linear-gradient(15deg, rgba(255, 255, 255, 0) 8.33%, rgba(255, 255, 255, 0) 27.43%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 37.85%, rgba(255, 255, 255, 0) 53.91%, rgb(255, 255, 255) 62.15%, rgba(255, 255, 255, 0) 68.23%, rgb(255, 255, 255) 91.67%);
+}
+.bg-gradient-top {
+    background: transparent linear-gradient(90deg, transparent, #fff 50%, transparent) 0 0 no-repeat padding-box;
+}
