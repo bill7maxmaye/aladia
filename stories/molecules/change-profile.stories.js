@@ -2,7 +2,7 @@ import ProfileUpload from "../../components/molecules/profile-upload.vue";
 import { ref } from "vue";
 
 const meta = {
-  title: "molecules/ProfileUpload",
+  title: "molecules/ChangeProfile",
   tags: ["autodocs"],
   component: ProfileUpload,
   parameters: {

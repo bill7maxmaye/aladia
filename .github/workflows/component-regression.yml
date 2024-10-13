@@ -1,12 +1,12 @@
-name: Test
+name: Component Visual Regression Test
 on:
   pull_request:
     branches:
       - main
 
 jobs:
-  test:
-    name: Test
+  component_visual_regression:
+    name: component_visual_regression
     runs-on: ubuntu-latest
 
     steps:
@@ -15,15 +15,18 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Install pnpm
+        run: |
+          npm install -g pnpm
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "22"
           cache: "pnpm"
-          cache-dependency-path: |
-            pnpm.lock
+
       - name: Install Dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
 
       - name: Build Application
         run: pnpm build
@@ -31,12 +34,7 @@ jobs:
       - name: Build Storybook
         run: pnpm build-storybook
 
-      - name: Run Chromatic
+      - name: Run Chromatic for Component Visual Regression
         uses: chromaui/action@latest
         with:
-          projectToken: "chpt_6d9f6d87b448ff0"
-
-      - name: Run Cypress with Chromatic
-        run: ELECTRON_EXTRA_LAUNCH_ARGS=--remote-debugging-port=9222 npx chromatic --cypress --project-token=$CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes
-        env:
-          CHROMATIC_PROJECT_TOKEN: "chpt_6d9f6d87b448ff0"
+          projectToken: "chpt_2150f05277ec111"

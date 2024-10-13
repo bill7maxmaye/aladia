@@ -1,7 +1,7 @@
 import Hero from "../../components/molecules/hero.vue";
 
 const meta = {
-  title: "molecules/Hero",
+  title: "molecules/MainSec",
   tags: ["autodocs"],
   component: Hero,
   argTypes: {

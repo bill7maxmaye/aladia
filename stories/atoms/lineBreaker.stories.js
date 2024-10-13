@@ -1,7 +1,7 @@
 import Divider from "../../components/atoms/divider.vue";
 
 const meta = {
-  title: "Atoms/Divider",
+  title: "Atoms/LineBreaker",
   tags: ["autodocs"],
   component: Divider,
   parameters: {

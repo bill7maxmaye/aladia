@@ -2,7 +2,7 @@ import InputField from "../../components/atoms/input-field.vue";
 import { ref } from "vue";
 
 const meta = {
-  title: "atoms/InputField",
+  title: "atoms/Input",
   tags: ["autodocs"],
   component: InputField,
   argTypes: {
