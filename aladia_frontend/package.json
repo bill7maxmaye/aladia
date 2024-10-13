@@ -13,7 +13,9 @@
     "lint:fix": "eslint . --fix",
     "storybook": "storybook dev --port 6006",
     "build-storybook": "storybook build",
-    "prepare": "husky"
+    "prepare": "husky",
+    "chromatic": "npx chromatic --cypress --project-token=chpt_405de7c017af7f5"
+    
   },
   "dependencies": {
     "@nuxtjs/storybook": "^8.3.1",
