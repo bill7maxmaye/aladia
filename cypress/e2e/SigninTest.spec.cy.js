@@ -1,5 +1,5 @@
 describe("TEST FOR ALADIA ", () => {
-  it("Test for server start", () => {
+  it("Test for server to start", () => {
     cy.visit("http://localhost:3000");
   });
 
@@ -14,7 +14,7 @@ describe("TEST FOR ALADIA ", () => {
   });
 
   /* ==== Test Created with Cypress Studio ==== */
-  it("register new user (in memory database)", function () {
+  it("Test to register a new user", function () {
     /* ==== Generated with Cypress Studio ==== */
     cy.visit("localhost:3000");
     cy.get("#email-field").clear("new");
